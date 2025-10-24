@@ -67,32 +67,30 @@ This project is ready for evaluator submission with the following structure:
 - Navigate to Binance Testnet → Futures → Orders → Order History
 - Show executed orders (Order IDs: 6895784083, 6895834950)
 - **Purpose**: Prove real trading activity 
-image.png
+<img width="1870" height="782" alt="image" src="https://github.com/user-attachments/assets/9348e3ee-8b68-4b0f-9dab-724777f5a5c8" />
 
-### 2. **Binance Testnet - Open Orders**
-- Navigate to Binance Testnet → Futures → Orders → Open Orders
-- Show active stop-loss and grid orders
-- **Purpose**: Show advanced order types working
+
 
 ### 3. **Bot Execution - Market Order**
 - Terminal showing: `python src/market_orders.py BTCUSDT BUY 0.001`
 - Show order response with Order ID and "Order placed successfully"
 - **Purpose**: Demonstrate real-time order placement
+- <img width="1137" height="323" alt="image" src="https://github.com/user-attachments/assets/69c595c9-05ec-44d9-983b-adf73d86918d" />
+
 
 ### 4. **Bot Execution - Limit Order**
 - Terminal showing: `python src/limit_orders.py BTCUSDT SELL 0.001 110000`
 - Show order response with Order ID, price, and status
 - **Purpose**: Show limit order functionality
+- <img width="1042" height="328" alt="image" src="https://github.com/user-attachments/assets/36844f50-716e-4d47-bdfd-f2b3b38b2b3b" />
+
 
 ### 5. **Bot Execution - Advanced Features**
 - Terminal showing: `python src/main.py --help`
 - Show all available commands and advanced order types
 - **Purpose**: Demonstrate comprehensive CLI interface
+- <img width="1021" height="765" alt="image" src="https://github.com/user-attachments/assets/e229008a-1dda-4f1a-af76-c7719b2412b9" />
 
-### 6. **Bot Execution - Grid Strategy**
-- Terminal showing: `python src/main.py grid BTCUSDT BUY 0.01 100000 120000 5`
-- Show grid orders being placed with order IDs
-- **Purpose**: Show advanced trading strategies
 
 ### 7. **Bot Logs - Execution History**
 - Open `bot.log` file showing:
@@ -100,19 +98,25 @@ image.png
   - Execution confirmations
   - Error handling examples
 - **Purpose**: Demonstrate comprehensive logging
+- <img width="1516" height="917" alt="image" src="https://github.com/user-attachments/assets/65b8046d-b0c7-44bb-a4f4-6279ac43e622" />
+
 
 ### 8. **Bot Testing - Connection Test**
 - Terminal showing: `python test_bot.py`
 - Show "Connection successful" and "All tests passed" messages
 - **Purpose**: Verify API connectivity and functionality
+- <img width="742" height="412" alt="image" src="https://github.com/user-attachments/assets/1a9a51c6-8f75-4b6c-846a-4a90b9a09756" />
+
 
 ### 9. **Project Structure**
 - File explorer showing complete project structure
 - Show all Python files in `src/` directory
 - Show documentation files (README.md, report.pdf)
 - **Purpose**: Show complete project organization
+- <img width="365" height="667" alt="image" src="https://github.com/user-attachments/assets/9a6636fb-93d2-4cec-8403-51886df99d92" />
 
-## 🚀 Quick Start for Evaluators
+
+## 🚀 Quick Start 
 
 1. **Install dependencies**:
    ```bash
