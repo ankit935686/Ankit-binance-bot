@@ -119,9 +119,11 @@ image.png
    pip install -r requirements.txt
    ```
 
-2. **Set up API credentials**:
+2. **Set up API credentials securely**:
    ```bash
-   python src/main.py config --set-api-key YOUR_API_KEY --set-api-secret YOUR_API_SECRET
+   # Copy the template and edit with your keys
+   cp config.json.template config.json
+   # Edit config.json with your Binance API credentials
    ```
 
 3. **Test basic functionality**:
@@ -157,12 +159,25 @@ image.png
 3. **Get Binance API credentials**:
    - For testing: Create account at https://testnet.binancefuture.com
    - For production: Create account at https://www.binance.com
-   - Generate API key and secret
+   - Generate API key and secret with **Futures Trading** permissions
 
-4. **Configure API keys**:
+4. **Configure API keys securely**:
+   
+   **Option A: Using the template (Recommended)**:
+   ```bash
+   # Copy the template to create your config
+   cp config.json.template config.json
+   
+   # Edit config.json with your API keys
+   # Replace YOUR_API_KEY_HERE and YOUR_API_SECRET_HERE with your actual keys
+   ```
+   
+   **Option B: Using CLI commands**:
    ```bash
    python src/main.py config --set-api-key YOUR_API_KEY --set-api-secret YOUR_API_SECRET
    ```
+   
+   **⚠️ Security Note**: Never commit your `config.json` file to git. It's already in `.gitignore` for your protection.
 
 ## Usage
 
@@ -294,8 +309,15 @@ All bot activities are logged to `bot.log` with timestamps:
 - Errors and exceptions
 - API responses
 
-## Safety Features
+## 🔒 Security & Safety Features
 
+### API Key Security
+- **Never commit API keys**: `config.json` is in `.gitignore` for protection
+- **Use template**: Copy `config.json.template` to `config.json` and add your keys
+- **Testnet first**: Always test on testnet before using mainnet
+- **Minimal permissions**: Use API keys with only necessary permissions
+
+### Safety Features
 - **Input Validation**: All parameters are validated before API calls
 - **Error Handling**: Comprehensive error handling with detailed logging
 - **Testnet Support**: Default to testnet for safe testing

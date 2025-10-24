@@ -103,12 +103,9 @@ The bot successfully executed real trades on Binance Testnet:
 ### 1. **Binance Testnet - Order History Screenshot**
 - **Location**: Binance Testnet → Futures → Orders → Order History
 - **Content**: Show executed orders (Order IDs: 6895784083, 6895834950)
-- **Purpose**: Provide visual proof of real trading activity on testnet
+- **Purpose**: Provide visual proof of real trading activity on testnet 
 
-### 2. **Binance Testnet - Open Orders Screenshot**
-- **Location**: Binance Testnet → Futures → Orders → Open Orders
-- **Content**: Show active stop-loss and grid orders
-- **Purpose**: Demonstrate advanced order types are working and active
+
 
 ### 3. **Bot Execution - Market Order Screenshot**
 - **Command**: `python src/market_orders.py BTCUSDT BUY 0.001`
