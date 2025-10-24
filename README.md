@@ -66,7 +66,8 @@ This project is ready for evaluator submission with the following structure:
 ### 1. **Binance Testnet - Order History**
 - Navigate to Binance Testnet → Futures → Orders → Order History
 - Show executed orders (Order IDs: 6895784083, 6895834950)
-- **Purpose**: Prove real trading activity
+- **Purpose**: Prove real trading activity 
+image.png
 
 ### 2. **Binance Testnet - Open Orders**
 - Navigate to Binance Testnet → Futures → Orders → Open Orders
